@@ -69,7 +69,7 @@ class Case(object):
 
     def get_locations(self):
         ''' return a list of locations '''
-        locations = re.findall('LOCATION:\s+\S.*', self.text)
+        locations = re.findall('LOCATION:\s+\S(.*)', self.text)
         # get rid of whitespace at the ends
         return [location.rstrip() for location in locations]
 ```
@@ -77,6 +77,6 @@ class Case(object):
 ``` python
 >>> case = Case(text)
 >>> case.get_locations()
-['LOCATION:  1500 BLOCK OF HUNTER ST']
+['1500 BLOCK OF HUNTER ST']
 ```
 To be continued......
