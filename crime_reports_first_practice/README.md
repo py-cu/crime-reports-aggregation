@@ -69,7 +69,7 @@ class Case(object):
 
     def get_locations(self):
         ''' return a list of locations '''
-        locations = re.findall('LOCATION:\s+\S(.*)', self.text)
+        locations = re.findall('LOCATION:\s+(\S.*)', self.text)
         # get rid of whitespace at the ends
         return [location.rstrip() for location in locations]
 ```
