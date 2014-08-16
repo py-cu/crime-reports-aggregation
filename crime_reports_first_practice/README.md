@@ -3,7 +3,7 @@ README
 
 General info
 -------------
-The crime report PDF (UPD8126.PDF, date 8/15/2014) was downloaded from http://www.city.urbana.il.us/_Police_Media_Reports/.
+The crime report PDF (UPD8126.PDF, date 8/14/2014) was downloaded from http://www.city.urbana.il.us/_Police_Media_Reports/.
 
 Tools
 -------
@@ -11,13 +11,13 @@ PDFMiner - https://github.com/euske/pdfminer/ (Clone or download as a .zip from 
 
 First goal
 -----------
-Accurately extract text for the first three crimes (U14-04860, U14-04859, U14-04830). The file portion.png (embedded below) shows that these span two pages of PD8125.PDF.
+Accurately extract text for the first three crimes (U14-04860, U14-04859, U14-04830). The file portion.png (embedded below) shows that these are part of the first page of PD8126.PDF.
 
-<img src="https://cloud.githubusercontent.com/assets/4472418/3942922/058a04ce-257e-11e4-8150-27483caf5fec.png" width="350px">
+<img src="https://cloud.githubusercontent.com/assets/4472418/3943362/f564921c-259b-11e4-9a17-7f23782f7742.png" width="350px">
 
 Second goal
 --------------
-Programmatically categorize info for the first three crimes (U14-04860, U14-04859, U14-04830).
+Programmatically categorize info for the first three crimes (U14-04860, U14-04859, U14-04858).
     ### Subgoal 1: deal with just U14-04860 -- assume we have that text and pull out the info we need
     ### Subgoal 2: deal with the whole file containing the first three cases, including the header(s)/other info.
 
