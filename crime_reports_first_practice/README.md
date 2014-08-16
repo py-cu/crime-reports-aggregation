@@ -11,15 +11,19 @@ PDFMiner - https://github.com/euske/pdfminer/ (Clone or download as a .zip from 
 
 First goal
 -----------
-Accurately extract text for the first three crimes (U14-04860, U14-04859, U14-04830). The file portion.png (embedded below) shows that these are part of the first page of PD8126.PDF.
+Accurately extract text for the first three crimes (U14-04860, U14-04859, U14-04830). These constitute part of the first page of PD8126.PDF.
 
-<img src="https://cloud.githubusercontent.com/assets/4472418/3943362/f564921c-259b-11e4-9a17-7f23782f7742.png" width="350px">
+<img src="https://cloud.githubusercontent.com/assets/4472418/3943367/3e6010e0-259c-11e4-8b82-e686734d2db6.png" width="350px">
 
 Second goal
 --------------
 Programmatically categorize info for the first three crimes (U14-04860, U14-04859, U14-04858).
-    ### Subgoal 1: deal with just U14-04860 -- assume we have that text and pull out the info we need
-    ### Subgoal 2: deal with the whole file containing the first three cases, including the header(s)/other info.
+
+### Subgoal 1
+Deal with just U14-04860 -- assume we have that text and pull out the info we need
+    
+### Subgoal 2
+Deal with the whole file containing the first three cases, including the header(s)/other info.
 
 First efforts/steps
 --------------------
