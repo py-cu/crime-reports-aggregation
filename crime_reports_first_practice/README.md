@@ -71,16 +71,29 @@ class Case(object):
     def __init__(self, text_chunk):
         self.text = text_chunk
 
-    def get_locations(self):
-        ''' return a list of locations '''
-        locations = re.findall('LOCATION:\s+(\S.*)', self.text)
-        # get rid of whitespace at the ends
-        return [location.rstrip() for location in locations]
+    @property
+    def locations(self):
+	    locations = re.findall('LOCATION:\s+(\S.*)', self.text)
+	    if not locations:
+		    return '(No locations found in crime report)'
+	    else:
+		    return [location.rstrip() for location in locations]
 ```
 
 ``` python
->>> case = Case(text)
->>> case.get_locations()
+>>> case = Case(text)  # "text" is the U14-04860 text above
+>>> case.locations
 ['1500 BLOCK OF HUNTER ST']
 ```
+
+```
+>>> case = Case('LOCATION: some place \n LOCATION: another place') 
+>>> case.locations
+['some place', 'another place']
+
+>>> case = Case('blah blah blah')
+>>> case.locations
+'(No locations found in crime report)'
+```
+
 To be continued......
