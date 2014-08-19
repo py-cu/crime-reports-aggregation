@@ -86,7 +86,7 @@ class Case(object):
 ['1500 BLOCK OF HUNTER ST']
 ```
 
-```
+``` python
 >>> case = Case('LOCATION: some place \n LOCATION: another place') 
 >>> case.locations
 ['some place', 'another place']
